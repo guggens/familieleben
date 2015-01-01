@@ -31,6 +31,22 @@ angular
         templateUrl: 'views/courses.html',
         controller: 'KurseCtrl'
       })      
+      .when('/coaching', {
+        templateUrl: 'views/coaching.html',
+        controller: 'CoachingCtrl'
+      })  
+      .when('/pekip', {
+        templateUrl: 'views/pekip.html',
+        controller: 'PekipCtrl'
+      })  
+      .when('/termine', {
+        templateUrl: 'views/termine.html',
+        controller: 'TermineCtrl'
+      })  
+      .when('/impressum', {
+        templateUrl: 'views/impressum.html',
+        controller: 'ImpressumCtrl'
+      })        
       .otherwise({
         redirectTo: '/'
       });

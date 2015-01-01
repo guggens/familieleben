@@ -12,9 +12,18 @@
     <!-- endbuild -->
     <!-- build:css(.tmp) styles/main.css -->
     <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Calligraffitti" />
     <!-- endbuild -->
   </head>
+
+
+
   <body ng-app="demopageApp">
+
+
+    <!-- fonts see http://www.cssfontstack.com/Web-Fonts -->
+
+
     <!--[if lt IE 7]>
       <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
@@ -22,8 +31,11 @@
     <!-- Add your site or application content here -->
     <div class="container">
       <div class="row">
-        <div class="col-md-12 col-lg-12">
-          <img class="img-responsive" src="images/emotionheader_smallerWithUrl.jpg" alt="Kinder reichen sich die Hände">
+        <div class="col-sm-9 col-md-10 col-lg-9 familytitle">
+          Familie leben
+        </div>
+        <div class="col-md-2 col-lg-3 col-sm-3">
+          <img class="img-responsive" src="images/Logo4.png" alt="Logo"></img>
         </div>
       </div>
 
@@ -44,29 +56,19 @@
                 <ul class="nav navbar-nav">
                   <li id="main"><a ng-href="#/">Home</a></li>
                   <li id="profile"><a ng-href="#/profil">Profil</a></li>
-                  <li id="courses"><a ng-href="#/courses">Kurse und Workshops</a></li>
-                  <li class="dropdown">
-                    <a href="#/" class="dropdown-toggle" data-toggle="dropdown">Dropdown 
-                      <b class="caret"></b>
-                    </a>
-                    <ul class="dropdown-menu">
-                      <li><a href="#/">Action</a></li>
-                      <li><a href="#/">Another action</a></li>
-                      <li><a href="#/">Something else here</a></li>
-                    </ul>
-                  </li>
-                  <li><a ng-href="#/coaching">Coaching</a></li>
-                  <li><a ng-href="#/termine">Termine</a></li>
-                  <li><a ng-href="#/impressum">Impressum</a></li>
+                  <li id="pekip"><a ng-href="#/pekip">Pekip</a></li>
+                  <li id="coaching"><a ng-href="#/coaching">Coaching</a></li>
+                  <li id="termine"><a ng-href="#/termine">Termine</a></li>
+                  <li id="impressum"><a ng-href="#/impressum">Impressum</a></li>
                 </ul>
               </div>
             </div>
           </div>
         </div>
-        <div ng-view="" class="col-md-9 col-lg-6 col-sm-9"></div>
+        <div ng-view="" class="col-md-9 col-lg-6 col-sm-9 center"></div>
       <div class="col-md-12 panel-default col-lg-3 col-sm-12">
         <div class="panel-heading">
-          <h4>Kontakt</h4>
+          Kontakt
         </div>
         <div class="panel-body">
           <address>
@@ -111,8 +113,7 @@
 
     <!-- build:js({.tmp,app}) scripts/scripts.js -->
     <script src="scripts/app.js"></script>
-    <script src="scripts/controllers/main.js"></script>
-    <script src="scripts/controllers/about.js"></script>
+    <script src="scripts/controllers/ctrl.js"></script>
     <!-- endbuild -->
   </body>
 </html>

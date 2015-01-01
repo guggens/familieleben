@@ -10,30 +10,64 @@ $icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/boots
   padding: 0.2em 0;
 }
 
+.familytitle {
+  font-size: 72px !important;
+  font-family: Calligraffitti;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 500;
+  //aline-height: 17.6000003814697px;
+  color: #333333; 
+}
+
 /* Space out content a bit */
 body {
   padding-top: 20px;
   padding-bottom: 20px;
+  background-color: #FFE0FA;
 }
 
-/* Everything but the jumbotron gets side spacing for mobile first views 
-.header,
-.footer {
-  padding-left: 15px;
-  padding-right: 15px;
-}*/
+.center {
+  background-color: #FFFFFF;
+}
+
+.sidebar-nav, .panel-heading, .panel-body {
+  background-color: #6F3987 !important;
+  color: #DDDDDD !important; 
+}
+
+.nav {
+  background-color: #6F3987;
+}
+
+.navbar-default .navbar-nav > li > a {
+  background-color: #6F3987;
+  color: #DDDDDD; 
+//   background-color: #FFE0FA;
+//   color: #CF32AB;
+}
+
+h1 {
+    color: #b504b7;
+}
+
+h2 {
+    color: #b504b7;
+}
+
+h3 {
+    color: #b504b7;
+}
+
+h4 {
+    color: #b504b7;
+}
+
+h5 {
+    color: #b504b7;
+}
 
 
-/* Custom page footer 
-.footer {
-  padding-top: 19px;
-  color: #777;
-  border-top: 1px solid #e5e5e5;
-}*/
-
-/*.container-narrow > hr {
-  margin: 30px 0;
-}*/
 
 /* Responsive: Portrait tablets and up */
 @media screen and (min-width: 768px) {
@@ -72,6 +106,7 @@ body {
   .sidebar-nav .navbar li a {
     padding-top: 12px;
     padding-bottom: 12px;
+    margin-top: 3px;
   }
 }
 
